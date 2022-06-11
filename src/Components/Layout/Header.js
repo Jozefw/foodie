@@ -7,7 +7,7 @@ import styles from './Header.module.css';
 
     <>
     <header className={styles.header}>
-    <h1>GoGo Pastry</h1>
+    <h1>GoGo Donuts</h1>
     <button>Cart</button>
     </header>
     <div className={styles['main-image']}>
