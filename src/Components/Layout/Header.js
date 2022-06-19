@@ -11,7 +11,7 @@ import styles from './Header.module.css';
     <button>Cart</button>
     </header>
     <div className={styles['main-image']}>
-        <img src={bkgImage} alt="deserts"></img>
+        <img src={bkgImage} alt="Donut image"></img>
     </div>
     </>
     
