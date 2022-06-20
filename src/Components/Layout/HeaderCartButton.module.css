@@ -1,0 +1,67 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: rgba(200, 231, 245, 1);
+
+    background-color:#F8B7CD;
+    color: white;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    font-weight: bold;
+    transition: background-color .5s;
+  }
+   /* #0671B7 #67A3D9 #C8E7F5 #F6D2E0 #F8B7CD  209, 160, 128*/
+  .button:hover,
+  .button:active {
+    background-color: #F6D2E0;
+    transition: background-color .5s;
+  }
+  
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+  
+  .badge {
+    background-color: rgba(209, 160, 128,1);
+    padding: 0.2rem .7rem;
+    border:1px solid #fff;
+    border-radius: 25px;
+    margin-left: 1rem;
+    font-weight: bold;
+    color:#fff;
+    transition: background-color .5s;
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
+    background-color: #F8B7CD;
+    transition: background-color .5s;
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

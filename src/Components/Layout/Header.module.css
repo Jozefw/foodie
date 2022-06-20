@@ -5,8 +5,8 @@
   width: 100%;
   height: 7rem;
   background:#fff;
-  color: #67A3D9;
-  text-shadow: 1px 1px 1px #0671B7;
+  color: #F8B7CD;
+  text-shadow: 1px 1px 1px rgba(209, 160, 128,1);;
   display: flex;
   justify-content: space-between;
   align-items: center;
