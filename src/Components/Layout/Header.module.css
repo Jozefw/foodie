@@ -6,7 +6,8 @@
   height: 7rem;
   background:#fff;
   color: #F8B7CD;
-  text-shadow: 1px 1px 1px rgba(209, 160, 128,1);;
+  color:rgba(209, 160, 128,1);
+  /* text-shadow: 1px 1px 1px rgba(209, 160, 128,1); */
   display: flex;
   justify-content: space-between;
   align-items: center;
