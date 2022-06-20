@@ -8,7 +8,11 @@ import styles from './Header.module.css';
 
     <>
     <header className={styles.header}>
-    <h1>GoGo Donuts</h1>
+    <span className={styles.headerWrapper}>
+    <h1 className={styles.title}>GoGo Donuts</h1>
+    <h4 className={styles.subheader}>Caffeinated Confections</h4>
+    </span>
+
     <HeaderCartButton>Cart</HeaderCartButton>
     </header>
     <div className={styles['main-image']}>
