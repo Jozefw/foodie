@@ -3,7 +3,7 @@ import React from 'react'
 export default function DesertSummary() {
   return (
     
-        <section className={classes.summary}>
+        <section>
           <h2>Delicious Food, Delivered To You</h2>
           <p>
             Choose your favorite meal from our broad selection of available meals
