@@ -1,4 +1,4 @@
-import React, {fragment} from 'react';
+import React from 'react';
 import bkgImage from '../../Assets/header.jpg';
 import HeaderCartButton from './HeaderCartButton';
 import styles from './Header.module.css';
@@ -16,7 +16,7 @@ import styles from './Header.module.css';
     <HeaderCartButton>Cart</HeaderCartButton>
     </header>
     <div className={styles['main-image']}>
-        <img src={bkgImage} alt="Donut image"></img>
+        <img src={bkgImage} alt="Donuts"></img>
     </div>
     </>
     

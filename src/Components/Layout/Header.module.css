@@ -22,12 +22,13 @@
   }
 .title{
   margin-bottom: 0;
-  font-size: 2.2rem;
+  font-size: 3.5vw;
   letter-spacing: 3px;
 }
 .headerWrapper{
   display: flex;
   flex-direction:column;
+  font-size:2vw;
 }
 .subheader{
   color:#F8B7CD;
