@@ -5,7 +5,7 @@ import CartIcon from '../Cart/CartIcon';
 const HeaderCartButton = ()=> {
   return (
     <button className={styles.button}>
-    <span><CartIcon>Cart</CartIcon></span>  
+    <span className={styles.icon}><CartIcon>Cart</CartIcon></span>  
     <span>Your Cart </span>  
     <span className={styles.badge}>3</span>  
     </button>
