@@ -32,7 +32,7 @@ const DESERT_DATA = [
 
 export default function AvailableDeserts() {
   const desertList = DESERT_DATA.map(desert=>
-  <li>{desert.name}</li>        
+  <li style={{'border':'1px solid red'}}>{desert.name}</li>        
   )
   return (
     <section className={styles.meals}>

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './DesertsSummary.module.css';
 
 export default function DesertSummary() {
   return (
     
-        <section>
+        <section className={styles.summary}>
           <h2>Delicious Food, Delivered To You</h2>
           <p>
             Choose your favorite meal from our broad selection of available meals

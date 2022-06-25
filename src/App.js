@@ -6,9 +6,10 @@ import Deserts from './Components/Deserts/Deserts';
 function App() {
   return (
     <div>
-      
       <Header>
+        <main>
         <Deserts></Deserts>
+        </main>
       </Header>
     </div>
   );
