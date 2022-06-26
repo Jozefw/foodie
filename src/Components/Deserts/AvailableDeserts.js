@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AvailableDeserts.module.css';
+import Card from '../UI/Card';
 
 
 const DESERT_DATA = [
@@ -31,15 +32,17 @@ const DESERT_DATA = [
 
 
 export default function AvailableDeserts() {
-
+  
   const desertList = DESERT_DATA.map(desert=>
   <li>{desert.name}</li>        
   )
   return (
     <section className={styles.meals}>
+      <Card>
       <ul>
         {desertList}
       </ul>
+      </Card>
     </section>
   )
 }
