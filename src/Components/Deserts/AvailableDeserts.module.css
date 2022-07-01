@@ -3,12 +3,19 @@
     width: 90%;
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 8px;
+    padding:10px;
+    box-shadow: inset 0px 3.00856px 6.01712px rgb(255 255 255 / 4%), inset 0px -3.00856px 9.02569px rgb(255 255 255 / 5%), inset 0px -1.50428px 20.0571px rgb(255 255 255 / 2%), inset 0px 20.0571px 20.0571px rgb(255 255 255 / 2%), inset 0px 1.00285px 20.5585px rgb(255 255 255 / 8%), 1px 1px 12px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(10px);
   }
   
   .meals ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #fff;
+    text-shadow:1px 1px 1px rgba(128, 88, 61,1);
   }
   
   @keyframes meals-appear {

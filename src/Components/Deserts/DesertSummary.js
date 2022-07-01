@@ -5,14 +5,12 @@ export default function DesertSummary() {
   return (
     
         <section className={styles.summary}>
-          <h2>Delicious Food, Delivered To You</h2>
+          <h2>Delicious Confections Delivered!</h2>
           <p>
-            Choose your favorite meal from our broad selection of available meals
-            and enjoy a delicious lunch or dinner at home.
+            Choose your favorite donuts from our broad selection and enjoy a delicious treat at home or on the go.
           </p>
           <p>
-            All our meals are cooked with high-quality ingredients, just-in-time and
-            of course by experienced chefs!
+            All our donuts are cooked with high-quality ingredients!
           </p>
         </section>
     

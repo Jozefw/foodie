@@ -2,7 +2,7 @@ import React from 'react';
 import DesertSummary from './DesertSummary';
 import AvailableDeserts from './AvailableDeserts';
 
-export default function DesertTypes(props) {
+export default function Deserts(props) {
   return (
     <>
     <DesertSummary></DesertSummary>

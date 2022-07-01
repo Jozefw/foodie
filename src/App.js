@@ -6,11 +6,11 @@ import Deserts from './Components/Deserts/Deserts';
 function App() {
   return (
     <div>
-      <Header>
+      <Header> </Header>
         <main>
         <Deserts></Deserts>
         </main>
-      </Header>
+     
     </div>
   );
 }
