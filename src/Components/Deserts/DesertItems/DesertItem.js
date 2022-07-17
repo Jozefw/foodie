@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './zDesertItem.module.css';
+import DesertItemForm from './DesertItemForm';
+import styles from './DesertItem.module.css';
 
 export default function DesertItem(props) {
 
@@ -13,7 +14,9 @@ export default function DesertItem(props) {
         <div className={styles.price}>{price}</div>
       </div>
      
-      <div></div>
+      <div>
+        <DesertItemForm></DesertItemForm>
+      </div>
     </li>
   )
 }
