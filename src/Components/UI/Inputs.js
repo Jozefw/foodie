@@ -5,8 +5,8 @@ import styles from './Input.module.css';
 export default function Input(props) {
   return (
     <div className={styles.input}>
-      <label htmllFor={props.input.id}>{props.label}</label>
-      <input id={props.input.id} {...props.inpur}> </input>
+      <label htmlFor={props.input.id}>{props.label}</label>
+      <input {...props.input}></input>
     </div>
   )
 }
