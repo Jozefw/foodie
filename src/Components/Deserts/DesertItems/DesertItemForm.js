@@ -7,7 +7,7 @@ export default function DesertItemForm(props) {
   return (
     <form className={styles.form}>
         <Inputs label="Amount" input={{
-          id: 'amount',
+          id: 'amount_' + props.id,
           type: 'number',
           min: '1',
           max: '5',

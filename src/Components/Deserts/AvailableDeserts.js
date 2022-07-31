@@ -37,6 +37,7 @@ export default function AvailableDeserts() {
   const desertList = DESERT_DATA.map(desert=>
   <DesertItem 
   key={desert.id} 
+  id={desert.id} 
   name={desert.name} 
   descr={desert.description}
   price={desert.price}></DesertItem>       

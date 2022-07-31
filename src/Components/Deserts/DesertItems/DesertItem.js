@@ -15,7 +15,7 @@ export default function DesertItem(props) {
       </div>
      
       <div>
-        <DesertItemForm></DesertItemForm>
+        <DesertItemForm id={props.id}></DesertItemForm>
       </div>
     </li>
   )
