@@ -7,8 +7,16 @@ const cartitems =<ul className={styles['cart-items']}>{[{id:'c1',name:'One Pound
   return (
     <div>
       {cartitems}
-      <div></div>
-      <div></div>
+      <div className={styles.total}>
+      <span>Total Amount</span>
+      <span>$62.54</span>
+      </div>
+
+      <div className={styles.action}>
+        <button className={styles['button--alt']}>Close</button>
+        <button className={styles.button}>Order</button>
+       
+      </div>
     </div>
   )
 }
