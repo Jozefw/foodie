@@ -17,7 +17,6 @@ const ModalOverlay = (props) => {
     <Fragment>
         {ReactDom.createPortal(<Backdrop></Backdrop>,portalElement)}
         {ReactDom.createPortal( <ModalOverlay>{props.children}</ModalOverlay>,portalElement)}
-       
     </Fragment>
   )
 }

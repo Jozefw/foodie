@@ -13,7 +13,7 @@ import styles from './Header.module.css';
     <h4 className={styles.subheader}>Caffeinated Confections</h4>
     </span>
 
-    <HeaderCartButton>Cart</HeaderCartButton>
+    <HeaderCartButton onClickButton={props.onShowingCart}>Cart</HeaderCartButton>
     </header>
     <div className={styles['main-image']}>
         <img src={bkgImage} alt="Donuts"></img>

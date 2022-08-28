@@ -13,7 +13,7 @@ const cartItems = <ul className={styles['cart-items']}>{[{id:'c1',name:'One Poun
       <span>$62.54</span>
       </div>
       <div className={styles.actions}>
-        <button className={styles['button--alt']}>Close</button>
+        <button onClick={props.onClose} className={styles['button--alt']}>Close</button>
         <button className={styles.button}>Order</button>
       </div>
       </Modal>
