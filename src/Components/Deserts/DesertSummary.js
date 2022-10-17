@@ -5,7 +5,7 @@ export default function DesertSummary() {
   return (
     
         <section className={styles.summary}>
-          <h2>Delicious Confections Delivered!</h2>
+          <h2>Delicious Caffeinated Confections</h2>
           <p>
             Choose your favorite donuts from our broad selection and enjoy a delicious treat at home or on the go.
           </p>

@@ -6,7 +6,7 @@ const Cart =(props) =>{
 const cartItems = <ul className={styles['cart-items']}>{[{id:'c1',name:'One Pounder',price:12.99,amount:2}].map((item)=><li key={item.id}>{item.name}</li>)}</ul>
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className={styles.total}>
       <span>Total Amount</span>
