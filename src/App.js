@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Header from './Components/Layout/Header';
 import Cart from './Components/Cart/Cart';
 import Deserts from './Components/Deserts/Deserts';
-import CartProvider from './CartProvider';
+import CartProvider from './Store/CartProvider';
 
 
 function App() {
