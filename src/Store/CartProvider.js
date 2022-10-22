@@ -1,14 +1,10 @@
 import CartContext from './CartContext';
 
 const CartProvider = (props) =>{
-
     const AddCartItemHandler = (item) =>{
-        
     }
     const RemoveCartItemHandler = (id) =>{
-
     }
-
     const AllCartContexts = {
         items:[],
         totalAmount:0,
@@ -16,9 +12,9 @@ const CartProvider = (props) =>{
         removeItem:RemoveCartItemHandler 
     }
 
-return <CartContext value={AllCartContexts}>
+return <CartContext.Provider value={AllCartContexts}>
     {props.children}
-</CartContext>
+</CartContext.Provider>
 }
 
 export default CartProvider;
