@@ -6,6 +6,9 @@ import CartIcon from '../Cart/CartIcon';
 
 const HeaderCartButton = (props)=> {
   const CartCtx = useContext(CartContext);
+  const numberCartItems = CartCtx.items.reduce((acc, item)=>{
+
+  },0);
   return (
     <button onClick={props.onClickButton} className={styles.button}>
     <span className={styles.icon}><CartIcon>Cart</CartIcon></span>  
