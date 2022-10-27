@@ -1,10 +1,10 @@
 import React,{useReducer} from 'react';
 import CartContext from './CartContext';
 
-// const ACTIONS = {
-//     ADD_CART_ITEM: 'add',
-//     REMOVE_CART_ITEM: 'remove'
-// }
+const ACTIONS = {
+    ADD_CART_ITEM: 'add',
+    REMOVE_CART_ITEM: 'remove'
+}
 
 const defaultCartState = {
     items:[],
@@ -13,7 +13,13 @@ const defaultCartState = {
 
 const cartReducer = (state,action) =>{
     switch(action.type){
-        case 'add'
+        case ACTIONS.ADD_CART_ITEM:
+            const updatedItems = state.items.concat(action.item);
+            const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
+            return {
+                items:updatedItems,
+                amount:updatedTotalAmount
+            }
     }
     return defaultCartState;
 }

@@ -1,12 +1,20 @@
-import React,{useState,useReducer} from 'react';
+import React,{useState,useReducer,useRef} from 'react';
 import Inputs from '../../UI/Inputs';
 import styles from './Form.module.css';
 
 export default function DesertItemForm(props) {
 
+  const amountInputRef = useRef()
+  const submitHandler = (evt)=>{
+    evt.preventDefault();
+
+  }
   return (
-    <form className={styles.form}>
-        <Inputs label="Amount" input={{
+    <form className={styles.form} onSubmit={submitHandler}>
+        <Inputs 
+          label="Amount" 
+          ref = {amountInputRef}
+          input={{
           id: 'amount_' + props.id,
           type: 'number',
           min: '1',
