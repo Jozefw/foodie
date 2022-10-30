@@ -1,10 +1,19 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import DesertItemForm from './DesertItemForm';
 import styles from './DesertItem.module.css';
+import CartContext from '../../../Store/CartContext';
 
 export default function DesertItem(props) {
-
+  const cartContext = useContext(CartContext)
   const price = `$${props.price.toFixed(2)}`
+  const addToCartHandler = (amount)=>{
+    cartContext.addItem({
+      id:props.id,
+      name:props.name,
+      amount:amount,
+      price:props.price
+    })
+  }
 
   return (
     <li className={styles.meal}>
@@ -15,7 +24,7 @@ export default function DesertItem(props) {
       </div>
      
       <div>
-        <DesertItemForm id={props.id}></DesertItemForm>
+        <DesertItemForm id={props.id} addItemToCart={addToCartHandler}></DesertItemForm>
       </div>
     </li>
   )
