@@ -1,4 +1,4 @@
-import React,{useState,useReducer,useRef} from 'react';
+import React,{useState,useRef} from 'react';
 import Inputs from '../../UI/Inputs';
 import styles from './Form.module.css';
 
@@ -6,6 +6,7 @@ export default function DesertItemForm(props) {
 
   const amountInputRef = useRef();
   const [validAmount,setValidAmount ] = useState(true);
+  
   const submitHandler = (evt)=>{
     evt.preventDefault();
     const amtEnter = amountInputRef.current.value;
