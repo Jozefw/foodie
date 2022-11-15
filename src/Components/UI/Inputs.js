@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Input.module.css';
 
-
 const Inputs = React.forwardRef((props,ref) => {
   return (
     <div className={styles.input}>
